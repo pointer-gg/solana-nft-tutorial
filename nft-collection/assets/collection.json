@@ -1,0 +1,15 @@
+{
+  "name": "Dinos collection",
+  "description": "A collection of dinosaurs living on the blockchain",
+  "image": "collection.jpg",
+  "symbol": "DINO",
+  "attributes": [],
+  "properties": {
+    "files": [
+      {
+        "uri": "collection.jpg",
+        "type": "image/jpg"
+      }
+    ]
+  }
+}

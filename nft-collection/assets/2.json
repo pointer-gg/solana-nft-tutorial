@@ -1,0 +1,20 @@
+{
+  "name": "Dino 2",
+  "description": "Long necked spiky boi on water",
+  "image": "2.jpg",
+  "symbol": "DINO",
+  "attributes": [
+    {
+      "trait_type": "arms",
+      "value": "long"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "2.jpg",
+        "type": "image/jpg"
+      }
+    ]
+  }
+}

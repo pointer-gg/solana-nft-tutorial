@@ -1,0 +1,20 @@
+{
+  "name": "Dino 3",
+  "description": "Just gave another one a pretty aggressive poke",
+  "image": "3.jpg",
+  "symbol": "DINO",
+  "attributes": [
+    {
+      "trait_type": "arms",
+      "value": "long"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "3.jpg",
+        "type": "image/jpg"
+      }
+    ]
+  }
+}

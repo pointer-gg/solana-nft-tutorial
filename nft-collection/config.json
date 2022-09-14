@@ -1,0 +1,26 @@
+{
+  "price": 0.1,
+  "number": 5,
+  "gatekeeper": null,
+  "creators": [
+    {
+      "address": "9AUvdLggr4DezH1FEHFBVqQPNUF9q6sZGTYoPMyum2sk",
+      "share": 100
+    }
+  ],
+  "solTreasuryAccount": "9AUvdLggr4DezH1FEHFBVqQPNUF9q6sZGTYoPMyum2sk",
+  "splTokenAccount": null,
+  "splToken": null,
+  "goLiveDate": "2022-09-14T09:37:06.372038+00:00",
+  "endSettings": null,
+  "whitelistMintSettings": null,
+  "hiddenSettings": null,
+  "uploadMethod": "bundlr",
+  "retainAuthority": true,
+  "isMutable": true,
+  "symbol": "DINO",
+  "sellerFeeBasisPoints": 500,
+  "awsConfig": null,
+  "nftStorageAuthToken": null,
+  "shdwStorageAccount": null
+}

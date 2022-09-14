@@ -1,0 +1,20 @@
+{
+  "name": "Dino 4",
+  "description": "The gang of swimmers",
+  "image": "4.jpg",
+  "symbol": "DINO",
+  "attributes": [
+    {
+      "trait_type": "arms",
+      "value": "more like fins"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "4.jpg",
+        "type": "image/jpg"
+      }
+    ]
+  }
+}
