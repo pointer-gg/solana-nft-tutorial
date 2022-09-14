@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@metaplex-foundation/js": "^0.15.0",
+    "@metaplex-foundation/js": "^0.17.1",
     "@solana/wallet-adapter-base": "^0.9.16",
     "@solana/wallet-adapter-react": "^0.15.18",
     "@solana/wallet-adapter-react-ui": "^0.9.16",
