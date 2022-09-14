@@ -14,6 +14,7 @@ export default function Navbar() {
           Holders only 😎
         </a>
       </Link>
+      <WalletMultiButton />
     </nav>
   )
 }
