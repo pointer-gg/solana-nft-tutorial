@@ -1,6 +1,7 @@
-import { CandyMachineV2, Metaplex, walletAdapterIdentity } from "@metaplex-foundation/js";
+import { CandyMachineV2, Metaplex, NftWithToken, walletAdapterIdentity } from "@metaplex-foundation/js";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { useEffect, useState } from "react";
+import NftDisplay from "../components/NftDisplay";
 import PageHeading from "../components/PageHeading";
 import { CANDY_MACHINE_ADDRESS } from "../lib/constants";
 
@@ -9,6 +10,7 @@ export default function Home() {
   const wallet = useWallet()
   const [candyMachine, setCandyMachine] = useState<CandyMachineV2 | undefined>(undefined)
   const [isMinting, setIsMinting] = useState(false)
+  const [mintedNft, setMintedNft] = useState<NftWithToken | undefined>(undefined)
 
   const metaplex = Metaplex
     .make(connection)
@@ -37,6 +39,7 @@ export default function Home() {
     setIsMinting(false)
 
     console.log("Minted one!", mintOutput)
+    setMintedNft(mintOutput.nft)
 
     // Fetch the candy machine to update the counts
     await fetchCandyMachine()
@@ -65,9 +68,16 @@ export default function Home() {
 
       {candyMachine ? (
         <p className="text-white">
-          {candyMachine.itemsMinted.toNumber()} / {candyMachine.itemsAvailable.toNumber()} minted!
+          {candyMachine.itemsMinted.toNumber() - 1} / {candyMachine.itemsAvailable.toNumber()} minted!
         </p>
       ) : <p className="text-white">Loading...</p>
+      }
+
+      {mintedNft ?
+        <div className="w-96">
+          <h2 className="text-xl font-medium text-white">You minted a {candyMachine.symbol}! 🎉</h2>
+          <NftDisplay json={mintedNft.json} />
+        </div> : null
       }
 
       <hr />
