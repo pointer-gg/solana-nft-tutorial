@@ -1,4 +1,4 @@
-import { Metaplex, walletAdapterIdentity } from "@metaplex-foundation/js"
+import { Metadata, Metaplex, walletAdapterIdentity } from "@metaplex-foundation/js"
 import { useConnection, useWallet } from "@solana/wallet-adapter-react"
 import { useEffect } from "react"
 import { COLLECTION_MINT_ADDRESS } from "../lib/constants"
@@ -9,7 +9,6 @@ export default function Holders() {
 
   const metaplex = Metaplex
     .make(connection)
-    .use(walletAdapterIdentity(wallet))
 
   const nfts = metaplex.nfts()
 
@@ -28,7 +27,15 @@ export default function Holders() {
         metadata.collection.address.toBase58() === COLLECTION_MINT_ADDRESS.toBase58()
     )
 
-    console.log("Got their NFTs!", ourCollectionNfts)
+    // Load the JSON for each NFT 
+    const loadedNfts = await Promise.all(ourCollectionNfts
+      .map(metadata => {
+        return nfts
+          .load({ metadata: metadata as Metadata })
+      })
+    )
+
+    console.log("Got their NFTs!", loadedNfts)
   }
 
   useEffect(() => {
