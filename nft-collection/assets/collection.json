@@ -1,0 +1,15 @@
+{
+  "name": "quantum_sapiens",
+  "description": "Estudia con un propósito más allá del conocimiento",
+  "image": "collection.jpg",
+  "symbol": "QSC",
+  "attributes": [],
+  "properties": {
+    "files": [
+      {
+        "uri": "collection.jpg",
+        "type": "image/jpg"
+      }
+    ]
+  }
+}

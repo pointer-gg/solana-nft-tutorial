@@ -1,0 +1,26 @@
+{
+  "name": "quantum_sapiens_maestro",
+  "symbol": "QSC",
+  "description": "Los Maestros son los Caballeros que han tenido un padawan, que han demostrado tener un gran entendimiento de la Fuerza y de la Orden. Por ello se les concede un lugar en el Gran Consejo junto al rango de Maestro.",
+  "seller_fee_basis_points": 100,
+  "image": "3.jpg",
+  "external_url": "https://github.com/cristianchaparroa/quantum-sapiens.git",
+  "collection": {
+    "name": "quantum_sapiens",
+    "family": "QSC"
+  },
+  "attributes": [
+    {
+      "trait_type": "Number",
+      "value": "3"
+    }
+  ],
+ "properties": {
+    "files": [
+      {
+        "uri": "3.jpg",
+        "type": "image/png"
+      }
+    ]
+  }
+}

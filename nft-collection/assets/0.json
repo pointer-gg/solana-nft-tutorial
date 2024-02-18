@@ -1,0 +1,26 @@
+{
+  "name": "quantum_sapiens_caballero",
+  "symbol": "QSC",
+  "description": "Un Padawan se convierte en un Caballero tras superar las pruebas. De esta forma se desvincula de su maestro y comienza su viaje en solitario. Es libre para viajar por la galaxia en misiones para la Orden y en tomar su propio Padawan.",
+  "seller_fee_basis_points": 100,
+  "image": "0.jpg",
+  "external_url": "https://github.com/cristianchaparroa/quantum-sapiens.git",
+  "collection": {
+    "name": "quantum_sapiens",
+    "family": "QS"
+  },
+  "attributes": [
+    {
+      "trait_type": "Number",
+      "value": "0"
+    }
+  ],
+ "properties": {
+    "files": [
+      {
+        "uri": "0.jpg",
+        "type": "image/png"
+      }
+    ]
+  }
+}

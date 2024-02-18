@@ -1,0 +1,26 @@
+{
+  "name": "quantum_sapiens_iniciado",
+  "symbol": "QSC",
+  "description": "Son los miembros más jóvenes de la Orden y comienzan su entrenamiento individual sobre los 2 años (en especies humanoides). Este entrenamiento tiene lugar en el Templo bajo la supervisión de los Maestros instructores así como la utilización del los recursos de los archivos.",
+  "seller_fee_basis_points": 100,
+  "image": "1.jpg",
+  "external_url": "https://github.com/cristianchaparroa/quantum-sapiens.git",
+  "collection": {
+    "name": "quantum_sapiens",
+    "family": "QS"
+  },
+  "attributes": [
+    {
+      "trait_type": "Number",
+      "value": "1"
+    }
+  ],
+ "properties": {
+    "files": [
+      {
+        "uri": "1.jpg",
+        "type": "image/png"
+      }
+    ]
+  }
+}
