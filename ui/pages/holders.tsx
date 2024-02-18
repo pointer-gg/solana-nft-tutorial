@@ -1,5 +1,5 @@
 export default function Holders() {
   return (
-    <p className="text-lg text-white">Holders only! ☠️</p>
+    <p className="text-lg text-white">Alumnos 🧑‍🎓</p>
   )
 }
